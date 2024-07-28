@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+    <title>FLASK TEST INDEX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+    <div class="main_div">
+
+        <h1>Login Page</h1>
+        <h2>Login System With Flask</h2>
+
+
+        <form id="dataForm" action="/process_data" method="POST">
+
+            <input type= "text" class="lname" id="l_name" name="l_name" placeholder="Email (ONLY GMAIL)" required>
+            <br>
+            <br>
+            <input type="password" class="lpass" id="l_pass" name="l_pass" placeholder="Password" required>
+            <br>
+            <button class="submit_button_One" type="submit">Login</button>
+
+        </form>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
